@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AP Biology Topic 4.6 — Regulation of Cell Cycle</title>
+  <link rel="stylesheet" href="../assets/cheatsheet.css" />
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← Back to AP Biology Master Index</a>
+    <div class="nav-actions">
+      <span>Unit 4: Cell Communication &amp; Cell Cycle | Topic 4.6</span>
+      <button onclick="window.print()">Print / Save PDF</button>
+    </div>
+  </div>
+
+  <main class="sheet">
+    <!-- Header -->
+    <header class="sheet-header">
+      <div class="title-block">
+        <h1 class="topic-title">AP BIOLOGY TOPIC 4.6</h1>
+        <div class="topic-subtitle">Regulation of Cell Cycle: Checkpoints, Cyclin–CDKs, p53, Oncogenes &amp; Cancer</div>
+      </div>
+      <div class="meta-badges">
+        <span class="unit-badge">UNIT 4: CELL COMMUNICATION &amp; CELL CYCLE (10–15% EXAM WEIGHT)</span>
+        <div class="ced-pills">
+          <span class="ced-pill">IST-1.D</span>
+          <span class="ced-pill">IST-1.E</span>
+          <span class="ced-pill">Cyclins / CDKs &amp; Tumor Suppressors</span>
+        </div>
+        <div class="header-credit">Credits: mitali120501@gmail.com <a class="donate-btn" href="https://rzp.io/rzp/apbiocheatsheets" target="_blank" rel="noopener noreferrer">Donate ♥</a></div>
+      </div>
+    </header>
+
+    <!-- Main 2-Column Content Grid -->
+    <div class="columns">
+      <!-- START_ACADEMIC_LEXICON -->
+      <section class="card full-width no-mindmap">
+        <div class="card-header">
+          <span>Key Terms &amp; Formal Definitions Lexicon — Topic 4.6 (Regulation of Cell Cycle: Checkpoints, Cyclin–CDKs, p53, Oncogenes &amp; Cancer)</span>
+          <span class="badge-tag">CED Core Vocabulary</span>
+        </div>
+        <div class="card-body">
+          <dl class="lexicon-grid">
+            <div class="lexicon-item"><dt>Purpose of Checkpoints</dt><dd>Internal molecular surveillance mechanisms that pause the cell cycle to verify fidelity and prevent damaged or unprepared cells from dividing. Ensure stages...</dd></div>
+<div class="lexicon-item"><dt>Cyclin-Dependent Kinases (CDKs)</dt><dd>Enzymes present at a constant concentration throughout the entire cell cycle, but they are catalytically INACTIVE on their own .</dd></div>
+<div class="lexicon-item"><dt>Cyclins</dt><dd>Regulatory proteins whose concentrations oscillate (rise and fall cyclically) across the cell cycle as they are synthesized and degraded.</dd></div>
+<div class="lexicon-item"><dt>Synthesis &amp; Binding</dt><dd>As a cell grows in S/G₂ , mitotic cyclin accumulates and binds allosterically to CDK → forms the active Cyclin–CDK complex (MPF) .</dd></div>
+<div class="lexicon-item"><dt>Phosphorylation of Targets</dt><dd>Active CDK uses ATP to phosphorylate target proteins (e.g., nuclear lamins to fragment the nuclear envelope, condensins to condense chromosomes, spindle...</dd></div>
+<div class="lexicon-item"><dt>Ubiquitin-Proteasome Degradation</dt><dd>In late mitosis (Anaphase), the cyclin subunit is enzymatically degraded → CDK becomes inactive again → cell exits mitosis into G₁ .</dd></div>
+<div class="lexicon-item"><dt>External Regulatory Signals in Normal Cells</dt><dd>Growth Factors (e.g., PDGF): Paracrine ligands secreted by platelets/cells that bind RTK receptors to stimulate target cells to pass the G₁ checkpoint and divide.</dd></div>
+<div class="lexicon-item"><dt>Anchorage Dependence</dt><dd>Normal animal cells must be physically attached to an extracellular matrix (ECM) substratum via integrins in order to divide.</dd></div>
+
+          </dl>
+        </div>
+      </section>
+      <!-- END_ACADEMIC_LEXICON -->
+<!-- LEFT COLUMN -->
+      <div class="col">
+        <!-- The 3 Major Internal Cell Cycle Checkpoints -->
+        <section class="card">
+          <div class="card-header">
+            <span>The 3 Major Internal Cell Cycle Checkpoints</span>
+            <span class="badge-tag">Quality Control Gates</span>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>Purpose of Checkpoints:</strong> Internal molecular surveillance mechanisms that pause the cell cycle to verify fidelity and prevent damaged or unprepared cells from dividing. Ensure stages occur <strong>in the correct order, at the right time, and only once per cycle</strong>.</li>
+            </ul>
+
+            <table class="mini-table">
+              <thead>
+                <tr>
+                  <th>Checkpoint</th>
+                  <th>Timing</th>
+                  <th>What the Cell Inspects</th>
+                  <th>If Checkpoint Fails</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. <span class="formula-pill">G₁</span> Checkpoint</strong><br/><em>(Restriction Point)</em></td>
+                  <td>Near end of <span class="formula-pill">G₁</span> (<strong>BEFORE</strong> DNA replication)</td>
+                  <td>Adequate <strong>cell size</strong>, sufficient <strong>nutrients/ATP</strong>, external <strong>growth factors</strong>, and <strong>undamaged DNA</strong>.</td>
+                  <td>Pauses cycle for DNA repair, exits into non-dividing <strong><span class="formula-pill">G₀</span> phase</strong>, or undergoes <strong>apoptosis</strong>.</td>
+                </tr>
+                <tr>
+                  <td><strong>2. <span class="formula-pill">G₂</span> Checkpoint</strong></td>
+                  <td>End of <span class="formula-pill">G₂</span> (<strong>AFTER</strong> S-phase replication, before Mitosis)</td>
+                  <td>Verifies <strong>DNA replication is 100% complete</strong>, newly replicated <strong>DNA is undamaged</strong>, and MPF levels are sufficient.</td>
+                  <td>Arrests at <span class="formula-pill">G₂</span> to activate DNA repair enzymes; if irreparable → triggers <strong>apoptosis</strong>.</td>
+                </tr>
+                <tr>
+                  <td><strong>3. <span class="formula-pill">M</span> (Spindle) Checkpoint</strong></td>
+                  <td>During <strong>Metaphase</strong> (before Anaphase)</td>
+                  <td>Ensures <strong>ALL chromosomes' kinetochores are properly attached</strong> to spindle microtubules from opposite poles.</td>
+                  <td>Blocks separase activation (delays <strong>Anaphase</strong>) to prevent <strong>nondisjunction / aneuploidy</strong>!</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="callout mistake">
+              <strong>Two High-Yield Checkpoint Mistakes:</strong><br/>
+              1. <strong><span class="formula-pill">G₁</span> checks DNA BEFORE replication</strong> (to avoid copying mutated templates), whereas <strong><span class="formula-pill">G₂</span> checks DNA AFTER replication</strong> (before mitosis begins).<br/>
+              2. At the <strong><span class="formula-pill">M</span> checkpoint</strong>, if even a single chromosome is unattached to spindle fibers, the cell <strong>must NOT proceed from Metaphase to Anaphase</strong>!
+            </div>
+          </div>
+        </section>
+
+        <!-- Cyclins & Cyclin-Dependent Kinases (CDKs) -->
+        <section class="card">
+          <div class="card-header">
+            <span>Molecular Engine: Cyclins &amp; Cyclin-Dependent Kinases (CDKs)</span>
+            <span class="badge-tag">CDK = Engine | Cyclin = Key</span>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>Cyclin-Dependent Kinases (CDKs):</strong>
+                <ul>
+                  <li>Enzymes present at a <strong>constant concentration</strong> throughout the entire cell cycle, but they are <strong>catalytically INACTIVE on their own</strong>.</li>
+                </ul>
+              </li>
+              <li><strong>Cyclins:</strong>
+                <ul>
+                  <li>Regulatory proteins whose concentrations <strong>oscillate (rise and fall cyclically)</strong> across the cell cycle as they are synthesized and degraded.</li>
+                </ul>
+              </li>
+              <li><strong>How Cyclin–CDK Control Works (e.g., MPF — Maturation Promoting Factor):</strong>
+                <ol>
+                  <li><strong>Synthesis &amp; Binding:</strong> As a cell grows in <span class="formula-pill">S/G₂</span>, mitotic <strong>cyclin accumulates</strong> and binds allosterically to <strong>CDK</strong> → forms the active <strong>Cyclin–CDK complex (MPF)</strong>.</li>
+                  <li><strong>Phosphorylation of Targets:</strong> Active CDK uses ATP to <strong>phosphorylate target proteins</strong> (e.g., nuclear lamins to fragment the nuclear envelope, condensins to condense chromosomes, spindle proteins) → pushes cell past the <span class="formula-pill">G₂</span> checkpoint into <strong>Mitosis</strong>.</li>
+                  <li><strong>Ubiquitin-Proteasome Degradation:</strong> In late mitosis (Anaphase), the <strong>cyclin subunit is enzymatically degraded</strong> → CDK becomes inactive again → cell exits mitosis into <span class="formula-pill">G₁</span>.</li>
+                </ol>
+              </li>
+            </ul>
+
+            <!-- SVG Cyclin / CDK / MPF Oscillation Graph -->
+            <div class="diagram-box">
+              <svg viewBox="0 0 430 124" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="422" height="116" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+                <text x="215" y="17" font-family="Fredoka, sans-serif" font-size="9.8" fill="#0f172a" text-anchor="middle" font-weight="600">Oscillating Cyclin Concentration vs. Constant CDK Across the Cell Cycle</text>
+
+                <!-- Axes -->
+                <line x1="42" y1="24" x2="42" y2="98" stroke="#334155" stroke-width="1.5"/>
+                <line x1="42" y1="98" x2="408" y2="98" stroke="#334155" stroke-width="1.5"/>
+                <text x="16" y="62" font-family="Plus Jakarta Sans" font-size="7.5" fill="#334155" text-anchor="middle" transform="rotate(-90 16 62)">Concentration</text>
+
+                <!-- Phase labels on X axis -->
+                <text x="72" y="110" font-family="JetBrains Mono" font-size="8" fill="#475569" text-anchor="middle" font-weight="700">G₁</text>
+                <text x="115" y="110" font-family="JetBrains Mono" font-size="8" fill="#475569" text-anchor="middle" font-weight="700">S</text>
+                <text x="160" y="110" font-family="JetBrains Mono" font-size="8" fill="#475569" text-anchor="middle" font-weight="700">G₂</text>
+                <text x="200" y="110" font-family="JetBrains Mono" font-size="8" fill="#dc2626" text-anchor="middle" font-weight="700">M</text>
+                <text x="250" y="110" font-family="JetBrains Mono" font-size="8" fill="#475569" text-anchor="middle" font-weight="700">G₁</text>
+                <text x="295" y="110" font-family="JetBrains Mono" font-size="8" fill="#475569" text-anchor="middle" font-weight="700">S</text>
+                <text x="340" y="110" font-family="JetBrains Mono" font-size="8" fill="#475569" text-anchor="middle" font-weight="700">G₂</text>
+                <text x="380" y="110" font-family="JetBrains Mono" font-size="8" fill="#dc2626" text-anchor="middle" font-weight="700">M</text>
+
+                <!-- Constant CDK Line (Blue Dashed) -->
+                <line x1="45" y1="62" x2="402" y2="62" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+                <text x="345" y="57" font-family="Fredoka" font-size="8" fill="#2563eb" font-weight="700">Constant [CDK] (Engine)</text>
+
+                <!-- Oscillating Cyclin Curve (Purple) -->
+                <path d="M 50,94 C 100,90 155,30 192,30 C 202,30 206,94 212,94 C 260,90 335,30 372,30 C 382,30 386,94 394,94" fill="none" stroke="#9333ea" stroke-width="2.4"/>
+                <text x="148" y="34" font-family="Fredoka" font-size="8" fill="#9333ea" font-weight="700">Rising [Cyclin]</text>
+                <text x="215" y="80" font-family="Plus Jakarta Sans" font-size="7" fill="#dc2626" font-weight="700">Cyclin Degraded!</text>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col">
+        <!-- External Physical & Chemical Signals + Cancer -->
+        <section class="card">
+          <div class="card-header">
+            <span>External Signals, Cancer &amp; Loss of Checkpoint Control</span>
+            <span class="badge-tag">Uncontrolled Division</span>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>External Regulatory Signals in Normal Cells:</strong>
+                <ul>
+                  <li><strong>Growth Factors (e.g., PDGF):</strong> Paracrine ligands secreted by platelets/cells that bind RTK receptors to stimulate target cells to pass the <span class="formula-pill">G₁</span> checkpoint and divide.</li>
+                  <li><strong>Density-Dependent Inhibition (Contact Inhibition):</strong> Crowded cells touch one another and stop dividing once a single confluent monolayer fills a surface.</li>
+                  <li><strong>Anchorage Dependence:</strong> Normal animal cells must be physically attached to an extracellular matrix (ECM) substratum via integrins in order to divide.</li>
+                </ul>
+              </li>
+              <li><strong>Hallmarks of Cancer Cells (Failure of Cell Cycle Regulation):</strong>
+                <ul>
+                  <li><strong>Ignore internal checkpoints</strong> (<span class="formula-pill">G₁, G₂, M</span>) and continue dividing even with severe DNA damage.</li>
+                  <li>Make their own growth factors (autocrine loop) or have <strong>constitutively active receptors/kinases</strong>.</li>
+                  <li>Lose <strong>density-dependent inhibition</strong> (pile up into tumors) and lose <strong>anchorage dependence</strong> (metastasize through blood/lymph).</li>
+                  <li><strong>Evade apoptosis</strong> and express <em>telomerase</em> for replicative immortality.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Proto-Oncogenes vs Tumor Suppressor Genes (p53) -->
+        <section class="card">
+          <div class="card-header">
+            <span>Proto-Oncogenes vs. Tumor Suppressor Genes (<span class="formula-pill">p53</span>)</span>
+            <span class="badge-tag">Gas Pedal vs Brakes</span>
+          </div>
+          <div class="card-body">
+            <table class="mini-table">
+              <thead>
+                <tr>
+                  <th>Gene Class</th>
+                  <th>Normal Cellular Function</th>
+                  <th>Cancer-Causing Mutation &amp; Analogy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Proto-Oncogenes → Oncogenes</strong><br/><em>(e.g., Ras, Myc, HER2)</em></td>
+                  <td>Normally <strong>promote cell growth and division</strong> in a regulated way in response to growth factors.</td>
+                  <td><strong>Gain-of-Function (Dominant — 1 mutant allele needed):</strong> Converts proto-oncogene into an overactive <strong>oncogene</strong>.<br/><strong>Analogy = "Gas pedal stuck down!"</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Tumor Suppressor Genes</strong><br/><em>(e.g., p53, BRCA1/2, Rb)</em></td>
+                  <td>Normally <strong>inhibit cell division, repair damaged DNA, or trigger apoptosis</strong> when DNA is irreparable.</td>
+                  <td><strong>Loss-of-Function (Recessive — 2 mutant alleles needed):</strong> Removes normal checkpoint inhibition.<br/><strong>Analogy = "Cut the brakes!"</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <ul>
+              <li><strong>Spotlight on <span class="formula-pill">p53</span> ("Guardian of the Genome" — Mutated in &gt;50% of Human Cancers):</strong>
+                <ul>
+                  <li>When DNA damage (UV, radiation, replication error) is detected at the <span class="formula-pill">G₁</span> checkpoint, the <strong>p53 transcription factor</strong> is activated and performs <strong>3 protective actions</strong>:
+                    <ol>
+                      <li><strong>Halts the Cell Cycle at <span class="formula-pill">G₁</span>:</strong> Transcribes <em>p21</em>, a CDK-inhibitor protein that blocks Cyclin–CDK so the cell has time to repair its DNA.</li>
+                      <li><strong>Activates DNA Repair Enzymes</strong> to fix the lesion.</li>
+                      <li><strong>Triggers Apoptosis (Programmed Cell Death):</strong> If DNA damage is too severe to repair, p53 activates caspase apoptosis genes so the mutated cell destroys itself.</li>
+                    </ol>
+                  </li>
+                  <li><strong>Consequence of Defective/Mutated <span class="formula-pill">p53</span>:</strong> Cells with damaged DNA fail to pause or undergo apoptosis → <strong>survive, replicate damaged DNA, and accumulate mutations → cancer!</strong></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="callout note">
+              <strong>AP Exam Scope Note:</strong> You do NOT need to memorize the names of specific cyclin-CDK pairs (like Cyclin B / CDK1) or specific growth factors — focus on how <strong>cyclin accumulation/degradation regulates CDK activity</strong> and how <strong>checkpoint or p53 mutations lead to cancer or apoptosis failure</strong>.
+            </div>
+          </div>
+        </section>
+      </div>
+<!-- START_ACADEMIC_EXPANSION -->
+      <section class="card full-width no-mindmap">
+        <div class="card-header">
+          <span>Scholarly Synthesis: Experimental Design, Quantitative Analysis, Pathology &amp; AP FRQ Rhetoric</span>
+          <span class="badge-tag">High-Yield Exam Rigor</span>
+        </div>
+        <div class="card-body">
+          <div class="section-mindmap">
+            <div class="mindmap-title">
+              <span>MASTER TOPIC SYNTHESIS &amp; CAUSAL ARCHITECTURE — TOPIC 4.6</span>
+              <span>[MOLECULAR CAUSE ➔ CELLULAR MECHANISM ➔ PHYSIOLOGICAL / ECOLOGICAL EFFECT ➔ FRQ JUSTIFICATION]</span>
+            </div>
+            <div class="mindmap-flow">
+              <span class="mm-node mm-root">Topic 4.6: Regulation of Cell Cycle: Checkpoints, Cyclin–CDKs, p53, Oncogenes &amp; Cancer</span>
+              <span class="mm-arrow">➔</span>
+              <span class="mm-node mm-sub">Structural / Energetic Determinants</span>
+              <span class="mm-arrow">➔</span>
+              <span class="mm-node">Regulated Pathway &amp; Homeostasis</span>
+              <span class="mm-arrow">➔</span>
+              <span class="mm-node">Experimental Perturbation (±2 SE_x̄)</span>
+              <span class="mm-arrow">➔</span>
+              <span class="mm-node mm-sub">Phenotypic / Evolutionary Outcome</span>
+            </div>
+          </div>
+          <table class="mini-table">
+            <thead>
+              <tr>
+                <th style="width: 24%;">Scholarly Dimension</th>
+                <th>Comprehensive Academic Reference &amp; Mechanistic Specification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>I. Experimental Design &amp; Required Lab Controls</strong></td>
+                <td>AP Investigation 7 (Mitosis in Onion Root Tips & Lectin Signaling): Root tip squash stained with aceto-orcein/toluidine blue to compare mitotic index (% dividing cells = [cells in PMAT / total cells counted] × 100) between control meristem and phytohemagglutinin (lectin) or caffeine-treated roots. Chi-square (χ²) tests whether observed mitotic vs. interphase counts differ significantly from control. <strong>Null Hypothesis (H₀):</strong> State explicitly that the independent variable treatment has <em>no statistically significant effect</em> on the dependent variable; any observed difference is due to random sampling chance alone.</td>
+              </tr>
+              <tr>
+                <td><strong>II. Quantitative Formulas &amp; Graph Interpretation</strong></td>
+                <td>Quantitative & Graph Analysis: Mitotic Index = (N_mitosis / N_total) × 100. DNA Content (C) & Ploidy (n) tracking in diploid (2n) somatic cells: G₁ = 2n, 2C (unreplicated chromosomes); S phase = DNA synthesis (2n, 2C → 4C); G₂/Prophase/Metaphase = 2n, 4C (sister chromatids joined); Anaphase = transient 4n, 4C (chromatids separate into individual chromosomes); Post-Cytokinesis = 2n, 2C. <strong>Error Bar Rule (±2 SE_x̄):</strong> If the ±2 SE_x̄ error bars of two treatment groups <em>do not overlap</em>, there is a statistically significant difference between means (p &lt; 0.05; reject H₀).</td>
+              </tr>
+              <tr>
+                <td><strong>III. Pathology, Mutation &amp; Disruption Case Study</strong></td>
+                <td>Clinical & Signaling Disruption Case Study: Vibrio cholerae secretes Cholera Toxin, which enzymatically modifies the G_α subunit of intestinal GPCRs so it cannot hydrolyze GTP → GDP. Locked in its active GTP-bound state, G_α continuously activates adenylyl cyclase, causing runaway cAMP accumulation, constitutive PKA activation, CFTR Cl⁻/H₂O efflux, and life-threatening secretory diarrhea. In cell cycle control, loss-of-function mutations in both alleles of TP53 ('guardian of the genome') prevent p21-mediated G₁/S arrest and apoptosis of DNA-damaged cells, driving oncogenic proliferation.</td>
+              </tr>
+              <tr>
+                <td><strong>IV. AP FRQ Task Verb Scoring Templates</strong></td>
+                <td>
+                  <strong>• DESCRIBE / IDENTIFY:</strong> State the direct trend, value, or structural component with exact units from the figure.<br/>
+                  <strong>• EXPLAIN (How/Why):</strong> Connect cause to effect via a 3-link chain: <em>"[Change in X] causes [molecular/cellular mechanism Y], which results in [observable outcome Z]."</em><br/>
+                  <strong>• PREDICT:</strong> State the specific directional change (increase, decrease, or remain constant) when the pathway is perturbed.<br/>
+                  <strong>• JUSTIFY:</strong> Pair quantitative data/evidence from the prompt with the underlying biological principle from Topic 4.6 to prove why the claim holds.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- END_ACADEMIC_EXPANSION -->
+    </div>
+
+    <footer class="sheet-footer">
+      <span>AP Biology Study Series — Unit 4: Cell Communication &amp; Cell Cycle</span>
+      <span>Topic 4.6: Regulation of Cell Cycle • High-Yield Illustrated Cheat Sheet</span>
+      <span class="credit-tag">Credits: mitali120501@gmail.com</span><a class="donate-btn" href="https://rzp.io/rzp/apbiocheatsheets" target="_blank" rel="noopener noreferrer">Donate ♥</a>
+    </footer>
+  </main>
+
+  <script src="../assets/cheatsheet.js"></script>
+</body>
+</html>
