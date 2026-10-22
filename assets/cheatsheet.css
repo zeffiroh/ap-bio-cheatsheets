@@ -1,0 +1,676 @@
+/* ==========================================================================
+   HARVARD / OXFORD ACADEMIC REFERENCE SHEET STYLESHEET
+   Pure White Background • Crisp Black Times New Roman • Deep Crimson (#8B0000)
+   ========================================================================== */
+
+:root {
+  --bg-page: #ffffff;
+  --bg-canvas: #ffffff;
+  --crimson-dark: #7a0000;
+  --crimson-main: #8b0000;
+  --crimson-mid: #a31515;
+  --crimson-light: #fdf2f2;
+  --crimson-tint: #fff8f8;
+  --crimson-rule: #8b0000;
+  --border-subtle: #c8b8b8;
+  --border-dark: #222222;
+  --text-black: #000000;
+  --text-charcoal: #111111;
+  --text-muted: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+body {
+  font-family: 'Times New Roman', Times, 'Liberation Serif', Georgia, serif;
+  background-color: #ffffff;
+  color: var(--text-black);
+  font-size: 11.5px;
+  line-height: 1.36;
+  padding: 12px 14px 28px;
+}
+
+/* Top Interactive Academic Toolbar (hidden in print/PDF) */
+.top-nav {
+  max-width: 1020px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  color: var(--text-black);
+  border: 1.5px solid var(--crimson-main);
+  border-top: 4px solid var(--crimson-main);
+  padding: 7px 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+}
+.top-nav a {
+  color: var(--crimson-main);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.top-nav a:hover {
+  text-decoration: underline;
+}
+.top-nav .nav-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-style: italic;
+}
+.top-nav button {
+  background: var(--crimson-main);
+  color: #ffffff;
+  border: 1px solid var(--crimson-dark);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 11.5px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.top-nav button:hover {
+  background: var(--crimson-dark);
+}
+
+/* Main Academic Sheet Container */
+.sheet {
+  max-width: 1020px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1.5px solid var(--crimson-main);
+  outline: 0.5px solid var(--crimson-main);
+  outline-offset: -4px;
+  padding: 18px 20px 16px;
+  position: relative;
+}
+
+/* Scholarly Masthead Header */
+.sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 3px double var(--crimson-main);
+}
+
+.title-block {
+  flex: 1;
+}
+
+.topic-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--crimson-main);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  line-height: 1.05;
+  margin-bottom: 3px;
+}
+
+.topic-subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-black);
+  line-height: 1.2;
+}
+
+.meta-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  text-align: right;
+}
+
+.unit-badge {
+  background: var(--crimson-main);
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border: 1px solid var(--crimson-dark);
+}
+
+.ced-pills {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.ced-pill {
+  background: #ffffff;
+  border: 1px solid var(--crimson-main);
+  color: var(--crimson-main);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9.8px;
+  font-weight: 700;
+  padding: 1px 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Two-Column Academic Monograph Grid */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  align-items: start;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Section Cards (Scholarly Boxed Sections) */
+.card {
+  border: 1px solid #8b0000;
+  border-top: 2.5px solid var(--crimson-main);
+  background: #ffffff;
+  padding: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.card-header {
+  background: var(--crimson-light);
+  color: var(--crimson-main);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 4px 9px;
+  border-bottom: 1px solid var(--crimson-main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header .badge-tag {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: none;
+  background: #ffffff;
+  color: var(--text-black);
+  border: 1px solid var(--crimson-main);
+  padding: 0.5px 6px;
+}
+
+.card-body {
+  padding: 6px 9px 7px;
+  color: var(--text-black);
+}
+
+.card-body p {
+  margin-bottom: 4px;
+  text-align: justify;
+}
+
+.card-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-body > ul > li {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 3.5px;
+  color: var(--text-black);
+}
+
+.card-body > ul > li::before {
+  content: "▪";
+  position: absolute;
+  left: 1px;
+  top: 0;
+  color: var(--crimson-main);
+  font-size: 11px;
+}
+
+.card-body ul ul {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.card-body ul ul > li {
+  position: relative;
+  padding-left: 13px;
+  margin-bottom: 2px;
+  font-size: 11px;
+  color: var(--text-charcoal);
+}
+
+.card-body ul ul > li::before {
+  content: "–";
+  position: absolute;
+  left: 2px;
+  top: 0;
+  font-weight: 700;
+  color: var(--crimson-main);
+}
+
+.card-body strong, .card-body b {
+  color: var(--text-black);
+  font-weight: 700;
+}
+
+/* Inline Defined Term Highlighting */
+.def-term {
+  color: var(--crimson-main);
+  font-weight: 700;
+  border-bottom: 1px dotted var(--crimson-main);
+}
+
+.hl {
+  background: var(--crimson-light);
+  color: var(--crimson-dark);
+  border-bottom: 1px solid var(--crimson-main);
+  padding: 0 3px;
+  font-weight: 700;
+}
+
+.formula-pill {
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11px;
+  background: #ffffff;
+  border: 1px solid var(--crimson-main);
+  color: var(--text-black);
+  padding: 0px 5px;
+  margin: 1px 0;
+  font-weight: 700;
+}
+
+.formula-box {
+  background: var(--crimson-tint);
+  border: 1px solid var(--crimson-main);
+  border-left: 3.5px solid var(--crimson-main);
+  padding: 5px 8px;
+  margin: 5px 0 4px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11.8px;
+  font-weight: 700;
+  color: var(--text-black);
+}
+
+/* ==========================================================================
+   HIERARCHICAL SECTION MINDMAP / CONCEPT FLOWCHART
+   ========================================================================== */
+.section-mindmap {
+  margin: 5px 0 5px;
+  padding: 5px 7px;
+  background: #ffffff;
+  border: 1px solid var(--crimson-main);
+  border-left: 3px solid var(--crimson-main);
+}
+
+.mindmap-title {
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--crimson-main);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #e5c5c5;
+  padding-bottom: 2px;
+}
+
+.mindmap-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.mm-node {
+  background: #ffffff;
+  border: 1px solid var(--text-black);
+  color: var(--text-black);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  line-height: 1.2;
+}
+
+.mm-node.mm-root {
+  background: var(--crimson-main);
+  border-color: var(--crimson-dark);
+  color: #ffffff;
+}
+
+.mm-node.mm-sub {
+  background: var(--crimson-light);
+  border-color: var(--crimson-main);
+  color: var(--crimson-dark);
+}
+
+.mm-arrow {
+  color: var(--crimson-main);
+  font-weight: 700;
+  font-size: 11px;
+  padding: 0 1px;
+}
+
+/* Legacy pathway-flow restyled to Crimson Academic */
+.pathway-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 5px 0;
+  padding: 4px;
+  border: 1px dashed var(--crimson-main);
+  background: var(--crimson-tint);
+}
+.pathway-step {
+  background: #ffffff;
+  border: 1px solid var(--crimson-main);
+  color: var(--text-black);
+  font-weight: 700;
+  font-size: 10.5px;
+  padding: 2px 7px;
+}
+.pathway-arrow {
+  color: var(--crimson-main);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   SCHOLARLY CALLOUT BOXES (Replacing Cartoon Mascots with Academic Labels)
+   ========================================================================== */
+.callout {
+  position: relative;
+  border: 1px solid var(--crimson-main);
+  border-left: 3.5px solid var(--crimson-main);
+  padding: 5px 8px 5px 8px;
+  margin-top: 6px;
+  background: #ffffff;
+  color: var(--text-black);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.callout-label {
+  display: inline-block;
+  background: var(--crimson-main);
+  color: #ffffff;
+  padding: 1px 6px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.callout-icon {
+  display: none !important;
+}
+
+.callout-content {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.34;
+  color: var(--text-black);
+  display: inline;
+}
+
+.callout-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 3px;
+}
+
+.callout-content ul li {
+  position: relative;
+  padding-left: 11px;
+  margin-bottom: 2px;
+}
+
+.callout-content ul li::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  color: var(--crimson-main);
+}
+
+.callout.example {
+  border-left-color: var(--crimson-main);
+  background: #ffffff;
+}
+.callout.remember {
+  border-left-color: var(--text-black);
+  background: var(--crimson-tint);
+}
+.callout.remember .callout-label {
+  background: var(--text-black);
+  color: #ffffff;
+}
+.callout.note {
+  border-left-color: var(--crimson-mid);
+  background: #ffffff;
+}
+.callout.exam-tip {
+  border: 1.5px solid var(--crimson-main);
+  border-left: 4px solid var(--crimson-main);
+  background: var(--crimson-light);
+}
+.callout.mistake {
+  border: 1.5px solid var(--crimson-dark);
+  border-left: 4px solid var(--crimson-dark);
+  background: #fff5f5;
+}
+
+/* ==========================================================================
+   SCIENTIFIC DIAGRAMS & ILLUSTRATIONS (Restyled to Academic Serif + Crimson)
+   ========================================================================== */
+.diagram-box {
+  background: #ffffff;
+  border: 1px solid var(--text-black);
+  border-top: 2px solid var(--crimson-main);
+  padding: 6px;
+  margin: 5px 0 3px;
+  text-align: center;
+}
+
+.diagram-box svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Force all SVG typography into crisp Academic Times New Roman */
+.diagram-box svg text,
+.diagram-box svg tspan {
+  font-family: 'Times New Roman', Times, Georgia, serif !important;
+}
+
+.diagram-caption {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--text-black);
+  font-weight: 700;
+  margin-top: 4px;
+  border-top: 0.5px solid #cccccc;
+  padding-top: 3px;
+}
+
+/* ==========================================================================
+   ACADEMIC COMPARISON TABLES
+   ========================================================================== */
+.mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1.5px solid var(--text-black);
+  font-size: 10.5px;
+  margin: 5px 0 3px;
+  background: #ffffff;
+}
+
+.mini-table th {
+  background: var(--crimson-main);
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 10px;
+  padding: 4px 6px;
+  text-align: left;
+  border: 1px solid var(--crimson-dark);
+}
+
+.mini-table td {
+  padding: 3.5px 6px;
+  border: 1px solid #777777;
+  vertical-align: top;
+  color: var(--text-black);
+}
+
+.mini-table tr:nth-child(even) td {
+  background: var(--crimson-tint);
+}
+
+/* ==========================================================================
+   LEXICON / DEFINITIONS GLOSSARY & ACADEMIC EXPANSION MODULES
+   ========================================================================== */
+.lexicon-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 10px;
+}
+
+.lexicon-item {
+  font-size: 10.8px;
+  line-height: 1.32;
+  padding-left: 8px;
+  border-left: 2px solid var(--crimson-main);
+}
+
+.lexicon-item dt {
+  display: inline;
+  font-weight: 700;
+  color: var(--crimson-main);
+}
+.lexicon-item dt::after {
+  content: " — ";
+  color: var(--text-black);
+  font-weight: 700;
+}
+.lexicon-item dd {
+  display: inline;
+  color: var(--text-black);
+}
+
+/* Sheet Footer */
+.sheet-footer {
+  margin-top: 12px;
+  padding-top: 6px;
+  border-top: 2px double var(--crimson-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--text-black);
+  font-weight: 700;
+}
+
+.credit-tag {
+  color: var(--crimson-main);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border: 1px solid var(--crimson-main);
+  background: var(--crimson-light);
+  padding: 1.5px 7px;
+}
+
+.header-credit {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--crimson-main);
+  letter-spacing: 0.3px;
+  margin-top: 2px;
+}
+
+.donate-btn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1.5px 7px;
+  border: 1px solid var(--crimson-main);
+  background: var(--crimson-light);
+  color: var(--crimson-main);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.donate-btn:hover,
+.donate-btn:focus-visible {
+  background: var(--crimson-main);
+  color: #fff;
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 5mm 6mm;
+  }
+  body {
+    background: #ffffff;
+    padding: 0;
+    font-size: 10.2px;
+    line-height: 1.3;
+    zoom: 0.86;
+  }
+  .top-nav {
+    display: none !important;
+  }
+  .sheet {
+    max-width: 100%;
+    padding: 10px 12px;
+  }
+}
